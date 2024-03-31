@@ -4,27 +4,16 @@
 		<title>Project SmallCroft</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<style>
-			.menu {
-				display: flex;
-				justify-content: space-around;
-				background-color: lightgray;
-				padding: 10px;
-			}
-			.menu a {
-				text-decoration: none;
-				color: black;
-				padding: 5px 10px;
-			}
-		</style>
 	</head>
 	<body class="is-preload">
-		<div class="menu">
-			<a href="/">Home</a>
-			<a href="/project/">The Project</a>
-			<a href="/about/">About Us</a>
-			<a href="/contact/">Contact</a>
-		</div>
+		
+		<div id="nav-placeholder"></div>
+		<script>
+			$(function(){
+				$("#nav-placeholder").load("nav.html");
+			});
+		</script>
+
 		<section>
 			<h2>About Us</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam lacus sit amet velit eleifend, sed porta magna bibendum. Duis sed risus in orci volutpat ullamcorper. Phasellus nibh ligula, varius a urna eget, iaculis dictum lacus. Sed libero sem, commodo vel euismod eu, scelerisque vel arcu. Cras ut mi sit amet leo scelerisque aliquam. In hac habitasse platea dictumst. Donec a sapien et diam ultricies faucibus a id purus. Suspendisse eu euismod nulla.</p>
